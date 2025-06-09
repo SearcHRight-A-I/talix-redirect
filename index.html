@@ -1,121 +1,333 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>페이지 이동 중...</title>
-    
-    <!-- 즉시 리다이렉트 -->
-    <meta http-equiv="refresh" content="0; url=https://searchright.net">
-    
-    <!-- 검색엔진을 위한 canonical URL -->
-    <link rel="canonical" href="https://searchright.net">
-    
-    <!-- 추가 SEO 설정 -->
-    <meta name="robots" content="noindex, nofollow">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO 최적화된 메타 정보 -->
+    <title>SearchRight - AI 기반 인재 발굴 플랫폼으로 이동</title>
+    <meta
+      name="description"
+      content="SearchRight AI 기반 인재 발굴 플랫폼으로 자동 이동합니다. 핵심인재를 만나는 완전히 새로운 방법을 경험해보세요."
+    />
+    <meta
+      name="keywords"
+      content="SearchRight, 서치라이트, AI 인재 발굴, 채용, 헤드헌팅, 인재 채용, 리크루팅"
+    />
+
+    <!-- 브랜드 및 비즈니스 정보 -->
+    <meta name="author" content="SearchRight" />
+    <meta name="company" content="SearchRight" />
+    <meta
+      name="classification"
+      content="Business, Recruitment, AI Technology"
+    />
+
+    <!-- Open Graph (소셜 미디어) -->
+    <meta
+      property="og:title"
+      content="SearchRight - AI 기반 인재 발굴 플랫폼"
+    />
+    <meta
+      property="og:description"
+      content="핵심인재를 만나는 완전히 새로운 방법. AI 기반의 역량 메타데이터로 최적의 인재를 발굴합니다."
+    />
+    <meta property="og:url" content="https://searchright.net" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SearchRight" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="SearchRight - AI 기반 인재 발굴 플랫폼"
+    />
+    <meta
+      name="twitter:description"
+      content="핵심인재를 만나는 완전히 새로운 방법"
+    />
+
+    <!-- 리다이렉트 설정 -->
+    <!-- <meta http-equiv="refresh" content="2; url=https://searchright.net" /> -->
+
+    <!-- SEO 지시사항 -->
+    <link rel="canonical" href="https://searchright.net" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    <meta name="googlebot" content="noindex, nofollow" />
+
+    <!-- 도메인 관련 정보 -->
+    <link rel="dns-prefetch" href="//searchright.net" />
+    <link rel="preconnect" href="https://searchright.net" />
+
+    <!-- 파비콘 (SearchRight 브랜드) -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNiIgZmlsbD0iIzAwNDJGRiIvPjx0ZXh0IHg9IjE2IiB5PSIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlM8L3RleHQ+PC9zdmc+"
+    />
+
+    <!-- JSON-LD 구조화 데이터 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SearchRight",
+        "alternateName": "서치라이트",
+        "description": "AI 기반 인재 발굴 플랫폼. 핵심인재를 만나는 완전히 새로운 방법",
+        "url": "https://searchright.net",
+        "logo": "https://searchright.net/image/logo_gray.png",
+        "industry": "Human Resources Technology",
+        "foundingLocation": {
+          "@type": "Country",
+          "name": "South Korea"
+        },
+        "serviceType": "AI-powered talent acquisition platform",
+        "areaServed": {
+          "@type": "Country",
+          "name": "South Korea"
+        }
+      }
+    </script>
+
     <style>
-        body {
-            font-family: 'Paybooc', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(to bottom, #000000 0%, #1E1E1E 50%, #000000 100%);
-            color: white;
+      body {
+        font-family: "Paybooc", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(
+          to bottom,
+          #000000 0%,
+          #1e1e1e 50%,
+          #000000 100%
+        );
+        color: white;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        padding: 3rem;
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        max-width: 500px;
+        width: 90%;
+        animation: fadeIn 0.8s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
         }
-        
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .logo {
+        width: 120px;
+        height: 44px;
+        margin: 0 auto 2rem;
+        background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQ0IiB2aWV3Qm94PSIwIDAgMTIwIDQ0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0ZXh0IHg9IjEwIiB5PSIzMCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPlNlYXJjSFJpZ2h0PC90ZXh0Pjwvc3ZnPg==")
+          no-repeat center;
+        background-size: contain;
+      }
+
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(0, 66, 255, 0.2);
+        border-top: 3px solid #0042ff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 2rem;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: white;
+      }
+
+      .description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 1.5rem;
+      }
+
+      .redirect-notice {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 2rem;
+      }
+
+      .manual-link {
+        color: #0042ff;
+        text-decoration: none;
+        font-weight: 500;
+        border-bottom: 1px solid #0042ff;
+        transition: all 0.3s ease;
+      }
+
+      .manual-link:hover {
+        color: white;
+        border-bottom-color: white;
+      }
+
+      .brand-text {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 2rem;
+        font-style: italic;
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
+        margin: 1.5rem 0;
+        overflow: hidden;
+      }
+
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #0042ff, #4a90e2);
+        border-radius: 2px;
+        animation: progress 2s ease-out;
+      }
+
+      @keyframes progress {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      /* 접근성 개선 */
+      @media (prefers-reduced-motion: reduce) {
+        .spinner,
+        .progress-fill,
         .container {
-            text-align: center;
-            padding: 3rem;
-            border-radius: 30px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            max-width: 500px;
-            width: 90%;
+          animation: none;
         }
-        
-        .logo {
-            width: 120px;
-            height: 44px;
-            margin: 0 auto 2rem;
-            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQ0IiB2aWV3Qm94PSIwIDAgMTIwIDQ0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0ZXh0IHg9IjEwIiB5PSIzMCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPlNlYXJjSFJpZ2h0PC90ZXh0Pjwvc3ZnPg==') no-repeat center;
-            background-size: contain;
+      }
+
+      /* 모바일 최적화 */
+      @media (max-width: 480px) {
+        .container {
+          padding: 2rem 1.5rem;
+          margin: 1rem;
         }
-        
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 3px solid rgba(0, 66, 255, 0.2);
-            border-top: 3px solid #0042FF;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 2rem;
+
+        h1 {
+          font-size: 20px;
         }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+
+        .description {
+          font-size: 14px;
         }
-        
-        h2 {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: white;
-        }
-        
-        p {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.5;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 2rem;
-        }
-        
-        a {
-            color: #0042FF;
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1px solid #0042FF;
-            transition: all 0.3s ease;
-        }
-        
-        a:hover {
-            color: white;
-            border-bottom-color: white;
-        }
-        
-        .brand-text {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.6);
-            margin-top: 2rem;
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="logo"></div>
-        <div class="spinner"></div>
-        <h2>서치라이트로 이동 중입니다</h2>
-        <p>AI 기반 인재 발굴 플랫폼 <strong>SearchRight</strong>로 자동 연결됩니다.</p>
-        <p>자동으로 이동되지 않으면 <a href="https://searchright.net">여기를 클릭</a>해주세요.</p>
-        <div class="brand-text">핵심인재를 만나는 완전히 새로운 방법</div>
+      <div class="logo" role="img" aria-label="SearchRight 로고"></div>
+
+      <div class="spinner" role="status" aria-label="로딩 중"></div>
+
+      <h1>SearchRight로 이동 중입니다</h1>
+
+      <div class="description">
+        AI 기반 인재 발굴 플랫폼 <strong>SearchRight</strong>로 자동 연결됩니다.
+      </div>
+
+      <div
+        class="progress-bar"
+        role="progressbar"
+        aria-label="페이지 이동 진행률"
+      >
+        <div class="progress-fill"></div>
+      </div>
+
+      <div class="redirect-notice">
+        자동으로 이동되지 않으면
+        <a href="https://searchright.net" class="manual-link" rel="noopener"
+          >여기를 클릭</a
+        >해주세요.
+      </div>
+
+      <div class="brand-text">핵심인재를 만나는 완전히 새로운 방법</div>
     </div>
 
     <script>
-        // JavaScript를 통한 추가 리다이렉트 (브라우저 호환성)
-        setTimeout(function() {
-            window.location.href = 'https://searchright.net';
-        }, 500);
-        
-        // 뒤로가기 방지
+      // 리다이렉트 기능
+      (function () {
+        "use strict";
+
+        // 성능 측정
+        const startTime = performance.now();
+
+        // 리다이렉트 실행
+        const redirectTimer = setTimeout(function () {
+          window.location.href = "https://searchright.net";
+        }, 2000);
+
+        // 뒤로가기 방지 (사용자 경험 개선)
         history.pushState(null, null, location.href);
-        window.onpopstate = function() {
-            history.go(1);
+        window.onpopstate = function () {
+          history.go(1);
         };
+
+        // 에러 처리
+        window.onerror = function (msg, url, line, col, error) {
+          console.log("Redirect page error:", error);
+          // 에러 발생 시 즉시 리다이렉트
+          window.location.href = "https://searchright.net";
+        };
+
+        // 접근성 개선: 스크린 리더를 위한 알림
+        const announcement = document.createElement("div");
+        announcement.setAttribute("aria-live", "polite");
+        announcement.setAttribute("aria-atomic", "true");
+        announcement.style.position = "absolute";
+        announcement.style.left = "-10000px";
+        announcement.textContent = "SearchRight 웹사이트로 이동 중입니다.";
+        document.body.appendChild(announcement);
+
+        // 페이지 가시성 API를 통한 최적화
+        if (typeof document.hidden !== "undefined") {
+          document.addEventListener("visibilitychange", function () {
+            if (!document.hidden) {
+              // 페이지가 다시 보이면 즉시 리다이렉트
+              clearTimeout(redirectTimer);
+              window.location.href = "https://searchright.net";
+            }
+          });
+        }
+      })();
     </script>
-</body>
+  </body>
 </html>
