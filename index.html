@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 이동 중...</title>
+    
+    <!-- 즉시 리다이렉트 -->
+    <meta http-equiv="refresh" content="0; url=https://searchright.net">
+    
+    <!-- 검색엔진을 위한 canonical URL -->
+    <link rel="canonical" href="https://searchright.net">
+    
+    <!-- 추가 SEO 설정 -->
+    <meta name="robots" content="noindex, nofollow">
+    
+    <style>
+        body {
+            font-family: 'Paybooc', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #000000 0%, #1E1E1E 50%, #000000 100%);
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 3rem;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 44px;
+            margin: 0 auto 2rem;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQ0IiB2aWV3Qm94PSIwIDAgMTIwIDQ0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0ZXh0IHg9IjEwIiB5PSIzMCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPlNlYXJjSFJpZ2h0PC90ZXh0Pjwvc3ZnPg==') no-repeat center;
+            background-size: contain;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(0, 66, 255, 0.2);
+            border-top: 3px solid #0042FF;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 2rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+        }
+        
+        a {
+            color: #0042FF;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #0042FF;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: white;
+            border-bottom-color: white;
+        }
+        
+        .brand-text {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="spinner"></div>
+        <h2>서치라이트로 이동 중입니다</h2>
+        <p>AI 기반 인재 발굴 플랫폼 <strong>SearchRight</strong>로 자동 연결됩니다.</p>
+        <p>자동으로 이동되지 않으면 <a href="https://searchright.net">여기를 클릭</a>해주세요.</p>
+        <div class="brand-text">핵심인재를 만나는 완전히 새로운 방법</div>
+    </div>
+
+    <script>
+        // JavaScript를 통한 추가 리다이렉트 (브라우저 호환성)
+        setTimeout(function() {
+            window.location.href = 'https://searchright.net';
+        }, 500);
+        
+        // 뒤로가기 방지
+        history.pushState(null, null, location.href);
+        window.onpopstate = function() {
+            history.go(1);
+        };
+    </script>
+</body>
+</html>
